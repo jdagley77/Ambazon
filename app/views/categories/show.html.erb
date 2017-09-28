@@ -1,0 +1,9 @@
+<h1><%= @category.name %></h1> 
+
+<% @category.products.each do |prod| %>
+		<ul>
+			<li><%= prod.name %> </li>
+		</ul>
+	<% end %>
+
+	<%= link_to 'Home', welcome_index_path %>
